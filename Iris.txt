@@ -1,0 +1,21 @@
+-En la primera parte del codigo importamos el dataset de iris.
+-Normalizamos los datos para que se pongan en modo estandar escalar.
+-Y hacemos dos tensores. Uno escalado para el entrenamiento y otro para el test siendo normal.
+-Ponemos cada variable con su entrenamiento y test respectivo.
+-Imprimimos los 10 primeros de cada tipo de entrenamiento y test
+
+-Vamos a definir un modelo de iris
+-En el constructor creamos los full connected, es decir todas las conexiones entre las entradas y las respectivas neuronas. Primero 4 entradas y 5 salidas y luego 5 entradas y 3 salidas.
+-El forward lo que hace es poner la funcion de activacion y además rectificar linearmente la primera conexion de neuronas, es decir el error.
+-Finalmente, imprimimos los parametros del modelo
+
+-Definimos el criterio de pérdida y el optimizador.
+
+-Empezamos el modelo, donde vamos a realizarlo 100 epocas, que basicamente es recorrer las 150 filas  paquetes de 15 del dataset 100 veces.
+-Inicializamos a 0 el gradiente y entrenamos el modelo con el conjunto de entrenamiento que creamos anteriormente.
+-Vemos la perdida
+
+- Evaluamos el modelo para ver el porcentaje de acierto que ha generado.
+
+- Cuando usamos "-"  como variable eso significa que esa variable no la vamos a utilizar para nada.
+
